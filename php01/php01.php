@@ -22,7 +22,15 @@ $radius = 8;
 
 $area = 2*$radius*PI;
 
-echo "\nThe circumfarence of the wheel is \nArea ={$area}";
+echo "\nThe circumfarence of the wheel is \nArea ={$area}"; //{$variable}  is another convention to use variable inside the " " it is a standerd way writing PHP
+
+echo "\n";
+var_dump($name); //var_dump() is a sort of function that will show what type of data_type and what is stored in the variable.
+$null = null;
+var_dump($null);
+$boolean = true;
+var_dump($boolean);
+printf("\n who are %s?\nAre you %s years old?\n","you",$$age);  //printf() is another way to  print lines. specially replace something in the line if needed.
 
 
 

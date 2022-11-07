@@ -152,3 +152,38 @@ echo"\n";
         break;
     
  }
+ echo "\n";
+
+ #operator precedence 
+
+//  https://www.php.net/manual/en/language.operators.precedence.php
+
+//  $f = false || true;//ture
+//  $e = false or true;// ($e = false) or true / $e = false
+
+ $f = true && false;
+ $e = true and false;
+ var_dump($f,$e);
+ echo"\n";
+
+ #php control structure
+
+//  normal if else
+
+$no = 12;
+if($no % 2 == 0 ){
+    echo "even number";
+}else{
+    echo "odd number";
+}
+echo PHP_EOL;
+
+if($no%2==0):
+    echo "even number";
+    echo PHP_EOL;
+    echo "text";
+else:
+    echo "odd number";
+    echo PHP_EOL;
+    echo "text";
+endif;

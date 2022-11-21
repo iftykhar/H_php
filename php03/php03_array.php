@@ -42,11 +42,14 @@ array_push($soldiers,"Hisenburg","studegar"); //adds one or more element at the 
 
 array_unshift($soldiers, "Olaf sholts","Erwin rommle");// adds one or more element at the top of the array
 
+// $n = count($soldiers);
+// for($i = 0; $i< $n; $i++){
+//     echo $soldiers[$i]."\n";
+// }
 $n = count($soldiers);
-for($i = 0; $i< $n; $i++){
-    echo $soldiers[$i]."\n";
+for($i=0; $i < $n; $i++){
+    echo $soldiers[$i].PHP_EOL;
 }
-
 //array is not immutable which means changeable
 // constant is immutable meaning unchangable
 
@@ -54,4 +57,29 @@ for($i = 0; $i< $n; $i++){
 // for($i = $n-1; $i >= 0; $i--){
 //     echo $soldiers[$i]."\n";
 // }
+
+echo PHP_EOL;
+
+$teachers = [
+    "rashed",
+    "kabir",
+    12,
+    "montgomary"
+];
+
+$teachers[2] = "shafayet";
+
+$teach = array_pop($teachers);
+$teach = array_shift($teachers);
+$teach = array_shift($teachers);
+
+array_push($teachers,"Samsher"); 
+array_unshift($teachers, "kamal");
+array_unshift($teachers, "kamal");
+// array_unshift($teachers, "kamal");
+// array_unshift($teachers, "kamal");
+$n  = count($teachers);
+for($i = 1; $i < $n; $i++){
+    echo $teachers[$i].PHP_EOL;
+}
 

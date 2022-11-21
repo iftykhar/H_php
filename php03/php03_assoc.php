@@ -57,3 +57,36 @@ echo "--------=======------\n";
 
 
 
+$coachs = [
+    '38'=>'mostofa',
+    '50'=>'salauddin',
+    '45'=>'kader',
+];
+
+// echo $coachs[45];
+$drinks = [
+    'fruits'=>'orange, banana, apple',
+    'milk'=>'chocholate, mango, banana',
+    'cold'=>'pepsi, rc, coce',
+];
+
+// echo $drinks['cold'];
+
+foreach($drinks as $key=>$value){
+    echo $key."-".$value.PHP_EOL;
+}
+
+echo  "*****".PHP_EOL;
+
+$keys = array_keys($drinks);
+for ($i=0; $i < count($keys) ; $i++) { 
+    $key = $keys[$i];
+    echo $drinks[$key].PHP_EOL;
+}
+echo "++++++++".PHP_EOL;
+$values = array_values($drinks);
+for($i = 0; $i < count($values); $i++){
+    $value = $values[$i];
+    // echo $drinks[$value].PHP_EOL;
+    echo $value.PHP_EOL;
+}

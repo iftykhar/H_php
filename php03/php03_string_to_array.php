@@ -7,3 +7,7 @@
 $vergitables = explode(',','bringjal,brocoli,carrot,capsicam');
 
 var_dump($vergitables);
+
+$vegi = join(', ', $vergitables);
+
+var_dump($vegi);
